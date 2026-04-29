@@ -58,6 +58,17 @@ Power Pivot relationships were created using keys such as:
 
 ---
 
+## 📊 Dashboard Preview
+![Dashboard](Screenshots/DB.png)
+
+## 🔧 Power Query Workflow
+![Power Query](Screenshots/PQ.png)
+
+## 🧩 Power Pivot Data Model
+![Power Pivot](Screenshots/PP.png)
+
+---
+
 ## 📬 Contact
 If you have questions or want to discuss this project, feel free to reach out:
 - [LinkedIn](https://www.linkedin.com/in/nikhilkattaguri)  
