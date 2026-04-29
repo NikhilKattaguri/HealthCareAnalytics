@@ -3,6 +3,10 @@
 This project is an end‑to‑end **Healthcare Analytics Dashboard** built using Excel, Power Query, and Power Pivot.  
 It analyzes patient encounters, procedures, insurance coverage, and operational trends for a hospital system.
 
+Data Source/Credit: 
+https://mavenanalytics.io/data-playground/hospital-patient-records
+https://synthea.mitre.org/downloads
+
 ---
 
 ## 📊 Project Overview
