@@ -1,0 +1,98 @@
+## 📂 Datasets
+
+Below is the complete data dictionary for all tables used in this Healthcare Analytics project.
+
+---
+
+## 🏥 Encounters
+
+| Field | Description |
+|-------|-------------|
+| Id | Primary Key. Unique identifier of the encounter. |
+| Start | Date & time the encounter started (ISO8601 UTC). |
+| Stop | Date & time the encounter ended (ISO8601 UTC). |
+| Patient | Foreign key to the Patient table. |
+| Organization | Foreign key to the Organization table. |
+| Payer | Foreign key to the Payer table. |
+| EncounterClass | Encounter type: ambulatory, emergency, inpatient, wellness, urgentcare. |
+| Code | Encounter code from SNOMED‑CT. |
+| Description | Description of the encounter type. |
+| Base_Encounter_Cost | Base cost excluding procedures, meds, immunizations, etc. |
+| Total_Claim_Cost | Total cost including all line items. |
+| Payer_Coverage | Amount covered by the payer. |
+| ReasonCode | Diagnosis code (SNOMED‑CT) if encounter targeted a condition. |
+| ReasonDescription | Description of the reason code. |
+
+---
+
+## 🏥 Organizations
+
+| Field | Description |
+|-------|-------------|
+| Id | Primary key of the organization. |
+| Name | Name of the organization. |
+| Address | Street address (no commas/newlines). |
+| City | City of the organization. |
+| State | State abbreviation. |
+| Zip | Postal code. |
+| Lat | Latitude of the address. |
+| Lon | Longitude of the address. |
+
+---
+
+## 👤 Patients
+
+| Field | Description |
+|-------|-------------|
+| Id | Primary Key. Unique identifier of the patient. |
+| BirthDate | Date of birth (YYYY‑MM‑DD). |
+| DeathDate | Date of death (YYYY‑MM‑DD). |
+| Prefix | Name prefix (Mr., Mrs., Dr., etc.). |
+| First | First name. |
+| Middle | Middle name. |
+| Last | Last name. |
+| Suffix | Name suffix (PhD, MD, JD, etc.). |
+| Maiden | Maiden name. |
+| Marital | Marital status (M = married, S = single). |
+| Race | Primary race. |
+| Ethnicity | Primary ethnicity. |
+| Gender | Gender (M/F). |
+| BirthPlace | Town of birth. |
+| Address | Street address (no commas/newlines). |
+| City | City of residence. |
+| State | State of residence. |
+| County | County of residence. |
+| FIPS County Code | FIPS code for county. |
+| Zip | Zip code. |
+| Lat | Latitude of address. |
+| Lon | Longitude of address. |
+
+---
+
+## 💳 Payers
+
+| Field | Description |
+|-------|-------------|
+| Id | Primary key of the payer. |
+| Name | Name of the payer (insurance provider). |
+| Address | Street address (no commas/newlines). |
+| City | City of headquarters. |
+| State_Headquartered | State abbreviation. |
+| Zip | Postal code. |
+| Phone | Payer phone number. |
+
+---
+
+## 🩺 Procedures
+
+| Field | Description |
+|-------|-------------|
+| Start | Date & time procedure started (ISO8601 UTC). |
+| Stop | Date & time procedure ended (ISO8601 UTC). |
+| Patient | Foreign key to the Patient table. |
+| Encounter | Foreign key to the Encounter table. |
+| Code | Procedure code (SNOMED‑CT). |
+| Description | Description of the procedure. |
+| Base_Cost | Line‑item cost of the procedure. |
+| ReasonCode | Diagnosis code (SNOMED‑CT) for why the procedure was performed. |
+| ReasonDescription | Description of the reason code. |
