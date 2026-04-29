@@ -62,5 +62,3 @@ Power Pivot relationships were created using keys such as:
 If you have questions or want to discuss this project, feel free to reach out:
 - [LinkedIn](https://www.linkedin.com/in/nikhilkattaguri)  
 - [Email](mailto:nikhilkattaguri27@gmail.com)
-
-## 📂 Repository Structure
